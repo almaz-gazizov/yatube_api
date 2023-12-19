@@ -29,6 +29,9 @@ class Post(models.Model):
         related_name='posts', blank=True, null=True
     )
 
+    class Meta:
+        ordering = ['author']
+
     def __str__(self):
         return (
             f'{self.text[:15]} {self.pub_date}'
