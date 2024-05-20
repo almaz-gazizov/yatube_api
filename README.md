@@ -14,31 +14,49 @@ Python, Django, DRF, JWT, Djoser, SQLite.
 ## Как запустить проект
 
 Клонирование репозитория в командной строке:
-```git clone git@github.com:almaz-gazizov/api_final_yatube.git```
+```
+git clone git@github.com:almaz-gazizov/django_sprint4.git
+```
 
 Cоздать и активировать виртуальное окружение:
-```python3 -m venv venv```
-```venv/bin/activate```
+```
+python3 -m venv venv
+```
+```
+venv/bin/activate
+```
 
 Установить зависимости из файла requirements.txt:
-```pip install -r requirements.txt```
+```
+pip install -r requirements.txt
+```
 
 Выполнить миграции:
-```python manage.py migrate```
+```
+python manage.py migrate
+```
 
 Запуск сервера:
-```python manage.py runserver```
+```
+python manage.py runserver
+```
 
 ### После запуска сервера полная документация API доступна по адресу:
-```http://127.0.0.1:8000/redoc/```
+```
+http://127.0.0.1:8000/redoc/
+```
 
 ## Примеры запросов к API
 
 Получение списка постов:
-```GET /api/v1/posts/```
+```
+GET /api/v1/posts/
+```
 
 Получение комментария к посту:
-```GET /api/v1/posts/{post_id}/comments/{id}/```
+```
+GET /api/v1/posts/{post_id}/comments/{id}/
+```
 
 ## Автор:
 
